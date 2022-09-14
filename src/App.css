@@ -4,8 +4,35 @@
   width: 100%;
 }
 
+.cg-timeline__header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 30px;
+  color: #2a2820;
+  margin: 0;
+}
+
+.rct-header-root,
 .rct-header-root > div:first-child {
-  background: white;
+  background: white !important;
+}
+
+.rct-calendar-header > div:nth-child(2) > * {
+  padding: 10px;
+  justify-content: flex-start;
+  color: #150b00;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: -1px;
 }
 
 .rct-sidebar-row {
@@ -15,9 +42,25 @@
   padding: 10px !important;
 }
 
+.rct-scroll > div > div:first-child {
+  background: #7a786c !important;
+}
+
+.rct-hl-even,
+.rct-hl-odd,
+.rct-sidebar-row-even,
+.rct-sidebar-row-odd {
+  background: white !important;
+  border-color: #dddad2 !important;
+}
+
+.rct-vl {
+  border-color: #dddad2 !important;
+}
+
 .rct-item {
   background: #dddad2 !important;
-  border: 2px solid #abaaa0 !important;
+  border: 2px solid #dddad2 !important;
   color: #150b00 !important;
   font-size: 14px !important;
   line-height: 20px !important;

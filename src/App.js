@@ -6,11 +6,16 @@ import { TodayMarker } from "react-calendar-timeline";
 import { TimelineHeaders } from "react-calendar-timeline";
 import { SidebarHeader } from "react-calendar-timeline";
 import { DateHeader } from "react-calendar-timeline";
+import Header from "./Header";
 
 const groups = [
   { id: 1, title: "Jaanus Juhan" },
   { id: 2, title: "Joosep Arrak" },
   { id: 3, title: "Peeter Eeter" },
+  { id: 4, title: "Jaanus Juhan" },
+  { id: 5, title: "Joosep Arrak" },
+  { id: 6, title: "Peeter Eeter" },
+  { id: 7, title: "Joosep Arrak" },
 ];
 
 const items = [
@@ -42,15 +47,16 @@ const items = [
 
 function App() {
   return (
-    <div>
+    <>
+      <Header />
       <Timeline
         groups={groups}
         items={items}
         sidebarWidth={200}
         dragSnap={30 * 60 * 1000}
         minResizeWidth="30"
-        defaultTimeStart={moment().add(-4, "hour")}
-        defaultTimeEnd={moment().add(4, "hour")}
+        defaultTimeStart={moment().add(-3.5, "hour")}
+        defaultTimeEnd={moment().add(3.5, "hour")}
         lineHeight="141"
         itemHeightRatio="0.94"
         timeSteps={{
@@ -65,12 +71,16 @@ function App() {
       >
         <TimelineHeaders>
           <SidebarHeader />
-          <DateHeader unit="day" labelFormat="DD. MMMM yyyy" />
-          <DateHeader />
+          <DateHeader
+            unit="day"
+            labelFormat="DD. MMMM yyyy"
+            style={{ height: 80 }}
+          />
+          <DateHeader style={{ height: 80 }} />
         </TimelineHeaders>
-        <TodayMarker />
+        <TodayMarker className="timeline-marker" />
       </Timeline>
-    </div>
+    </>
   );
 }
 
