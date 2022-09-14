@@ -1,0 +1,49 @@
+.cg-timeline {
+  display: block;
+  position: static;
+  width: 100%;
+}
+
+.rct-header-root > div:first-child {
+  background: white;
+}
+
+.rct-sidebar-row {
+  text-align: right;
+  vertical-align: top;
+  line-height: 20px !important;
+  padding: 10px !important;
+}
+
+.rct-item {
+  background: #dddad2 !important;
+  border: 2px solid #abaaa0 !important;
+  color: #150b00 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  display: flex !important;
+  flex-flow: column nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 5px !important;
+  border-radius: 2px !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: default !important;
+}
+
+.rct-item:hover,
+.rct-item:focus {
+  background: #c4c2b9 !important;
+}
+.rct-item:active {
+  background: #abaaa0 !important;
+}
+
+.rct-item-content {
+  width: 100% !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-flow: column nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
